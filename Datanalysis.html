@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>DataAnalysis</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="./css/aos.min.css" rel="stylesheet">
+    <link href="./css/swiper.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/favicon.png">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+        <div class="container">
+
+            <!-- Image Logo -->
+            <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> -->
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+              <img src="assets/images/kletechlogo.jpg" alt="College Logo" class="college-logo">
+            <a class="navbar-brand logo-text" href="index.html">Exploratory Data Analysis</a>
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault" >
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html#header">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SDG.html">SDG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Empathy.html">Empathy</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" href="#">Problem Formulation</a>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="ProblemDescription.html">Problem Description</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="DataDescription.html">Data Description</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" href="#">EDA</a>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="Preprocessing.html">Data Preparation and Preprocessing</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="Datanalysis.html">Data Analysis </a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="Conclusion.html">Conclusion</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SystemThinking.html">System Thinking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="LearningReflections.html">Learning Reflections</a>
+                    </li>
+                </ul>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header class="ex-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <h1>Data Analysis</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <h2 class="mt-5 mb-3">Data Analysis</h2>
+                    <p class="mb-5">In the analysis phase, the data is checked carefully to find patterns and important points that answer the main questions. Simple math and pictures like charts are used to make the data easier to understand. This helps show how different parts of the data are connected and find trends. Using clear pictures makes it easier to explain the results and make good choices.</p>
+                    <h3>Research Questions</h3>
+  <div class="question-section">
+    <h4>1. How does the number of individuals treated vary over time globally?</h4>
+    <div class="graph">
+      <img src="assets/images/question1.png" alt="Graph for Research Question 1" />
+    </div>
+    <div class="inference">
+        <h5>Inference :</h5>
+     <ul>
+        <li>Treatment coverage grew from 60 M (2005) to 170 M (2018) as MDA programs scaled up.</li>
+        <li>A sharp drop to 110 M in 2020 reflects COVID-19 disruptions.</li>
+        <li>Rapid rebound to 170 M by 2023 shows strong program recovery</li>
+     </ul>
+    </div>
+  </div>
+
+  <div class="question-section">
+    <h4>2. Which region has the highest average number of individuals treated?</h4>
+    <div class="graph">
+      <img src="assets/images/question2.jpg" alt="Graph for Research Question 2" />
+    </div>
+    <div class="inference">
+        <h5>Inference :</h5>
+      <ul>
+        <li>Africa has the highest (2.177B) average treated individuals.</li>
+       <li>Eastern Mediterranean is significantly lower(20.3M).</li>
+       <li>Americas has the lowest(2.94M)  average among the three regions.</li>
+      </ul>
+    </div>
+  </div>
+   <div class="question-section">
+    <h4>3. How does the number of individuals treated vary over time in Africa?</h4>
+    <div class="graph">
+      <img src="assets/images/question3.png" alt="Graph for Research Question 2" />
+    </div>
+    <div class="inference">
+        <h5>Inference :</h5>
+      <ul>
+        <li>In 2005, around 60 million people were treated.</li>
+       <li>The number gradually increased, reaching about 165 million by 2016.</li>
+       <li>In 2020, there was a sharp drop to 110 million, due to COVID-19.</li>
+       <li>The Treatment numbers rise again after 2020,by reaching a peak of 170 million in 2023.</li>
+       <li>The trend shows a steady rise in treatment coverage over the years, with a temporary dip in 2020.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="question-section">
+    <h4>4. Which African countries have treated the highest number of individuals over all years?</h4>
+    <div class="graph">
+      <img src="assets/images/question4.png" alt="Graph for Research Question 3" />
+    </div>
+    <div class="inference">
+    <h5>Inference :</h5>
+      <ul>
+        <li>Nigeria treated the highest number of individuals (570 million).</li>
+       <li>Democratic Republic of the Congo follows (470 million).</li>
+       <li>Other high-treatment countries include Ethiopia (180M), Cameroon (120M), and Côte d'Ivoire (90M).</li>
+       <li>Most other African countries treated between 10M to 70M individuals.</li>
+       <li>The least treated countries include Kenya, Rwanda, and Niger with treatments under 10 million.</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="question-section">
+    <h4>5. How has the number of individuals treated in Nigeria changed annually from 2005 to 2023?</h4>
+    <div class="graph">
+      <img src="assets/images/question5.png" alt="Graph for Research Question 2" />
+    </div>
+    <div class="inference">
+      <h5>Inference :</h5>
+      <ul>
+        <li>The number of individuals treated increased from about 21 million in 2005 to a peak of over 44 million in 2014 and 2018.</li>
+       <li>There was a sharp drop to about 11 million in 2021, likely due to the COVID-19 pandemic.</li>
+       <li>Treatment numbers recovered to around 35 million in 2023.</li>
+       
+      </ul>
+    </div>
+  </div>
+
+  <div class="question-section">
+    <h4>6. How did the number of individuals treated in Democratic Republic Congo change from 2005 to 2023?</h4>
+    <div class="graph">
+      <img src="assets/images/question6.png" alt="Graph for Research Question 2" />
+    </div>
+    <div class="inference">
+      <h5>Inference :</h5>
+      <ul>
+        <li>In 2005, about 5 million people were treated.</li>
+       <li>By 2009, this increased to 18 million.</li>
+       <li>In 2015, around 30 million were treated.</li>
+       <li>In 2019–2020, there was a drop in treatment due to the impact of the COVID-19 pandemic, as healthcare efforts were diverted to managing the outbreak.</li>
+       <li>From 2020 to 2023, over 43 million people were treated each year.</li>
+      </ul>
+    </div>
+  </div>
+  
+    <div class="question-section">
+    <h4>7. How did the number of individuals treated in Ethiopia change from 2005 to 2023?</h4>
+    <div class="graph">
+      <img src="assets/images/question7.png" alt="Graph for Research Question 2" />
+    </div>
+    <div class="inference">
+      <h5>Inference :</h5>
+      <ul>
+       <li>In 2005,3 million individuals were treated.</li>
+       <li>Treatment numbers gradually increased to about 5 million by 2011.</li>
+       <li>A fixed rise continued, reaching nearly 14 million in 2016.</li>
+       <li>From 2016 to 2021, treatment numbers remained stable around 14–17 million.</li>
+       <li>In 2023, treatment peaked at over 20 million individuals.</li>
+       <li>A Continuous and stable increase in treatment numbers, with a significant peak in 2023.</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="question-section">
+    <h4>8. Which country treated more individuals in total across all years Sudan or Yemen?</h4>
+    <div class="graph">
+      <img src="assets/images/question8.png" alt="Graph for Research Question 2" />
+    </div>
+    <div class="inference">
+      <h5>Inference :</h5>
+      <ul>
+        <li>Sudan treated the highest number of individuals(around 14 million individuals in total).</li>
+       <li>Yemen treated fewer people compared to Sudan(around 6 million individuals).</li>
+       <li>Sudan treated more than twice as many people as Yemen.</li> 
+      </ul>
+    </div>
+  </div>
+
+   <div class="question-section">
+    <h4>9. How does the number of individuals treated vary over time in Eastern Mediterranean?</h4>
+    <div class="graph">
+      <img src="assets/images/question9.png" alt="Graph for Research Question 2" />
+    </div>
+    <div class="inference">
+      <h5>Inference :</h5>
+      <ul>
+        <li>In 2005 1 million individuals were treated.</li>
+       <li>The number of individuals treated sharply increased and reached at 3.5 million in 2009.</li>
+       <li>A sudden drop occurred in 2010, falling below 0.5 million.</li> 
+       <li>From 2011 to 2019, treatment numbers stayed low, around 0.4 to 0.8 million.</li>
+       <li>In 2021,treatment rose again to 1.5 million, then dropped slightly in 2023.</li>
+       <li>A Sharp rise till 2009, major drop in 2010, followed by low and fluctuating treatment numbers.</li>
+      </ul>
+    </div>
+  </div>
+
+   <div class="question-section">
+    <h4>10. How has the number of individuals treated in Sudan changed from 2005 to 2023?</h4>
+    <div class="graph">
+      <img src="assets/images/question10.png" alt="Graph for Research Question 2" />
+    </div>
+    <div class="inference">
+       <h5>Inference :</h5>
+      <ul>
+        <li>2009 & 2010: Peak treatment years (3.3 million individuals).</li>
+       <li>2005–2008: Rapid yearly increase from 0.7M to 2.1M.</li>
+       <li>2011: Sharp drop to 0.35M after the peak.</li> 
+       <li>2012–2016: Very low and stable (0.1M–0.25M).</li>
+       <li>2017: Slight recovery (0.4M).</li>
+       <li>2018–2022: Consistently low (0.05M–0.15M).</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="question-section">
+    <h4>11. How has the number of individuals treated in Yemen changed from 2005 to 2023?</h4>
+    <div class="graph">
+      <img src="assets/images/question11.png" alt="Graph for Research Question 2" />
+    </div>
+    <div class="inference">
+       <h5>Inference :</h5>
+      <ul>
+        <li>From 2005 to 2012, treatments stayed below 100,000.</li>
+       <li>Between 2013 and 2016, numbers slowly increased.</li>
+       <li>In 2018, treatments raised sharply around 550,000.</li> 
+       <li>By 2021, over 700,000 people were treated.</li>
+       <li>In 2022 and 2023, treatments peaked at over 1.2 million</li>
+      </ul>
+    </div>
+  </div>
+  
+
+  <div class="question-section">
+    <h4>12. In America, which countries have the highest individual treated count?</h4>
+    <div class="graph">
+      <img src="assets/images/question12.png" alt="Graph for Research Question 2" />
+    </div>
+    <div class="inference">
+       <h5>Inference :</h5>
+      <ul>
+        <li>Guatemala had the highest total number of treatments, with around 900,000 individuals treated.</li>
+       <li>Venezuela and Mexico followed closely, each with over 850,000 treatments.</li>
+       <li>Brazil treated approximately 200,000 individuals. </li> 
+       <li>Ecuador accounted for around 100,000 treatments.</li>
+       <li>Colombia had the lowest number of treated individuals, with only a small count reported. </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="question-section">
+    <h4>13. How does the number of individuals treated vary over time in America?</h4>
+    <div class="graph">
+      <img src="assets/images/question13.png" alt="Graph for Research Question 2" />
+    </div>
+    <div class="inference">
+       <h5>Inference :</h5>
+      <ul>
+        <li>In 2005,430,000 individuals were treated.</li>
+       <li>The number of individuals treated remained high till 2008, then dropped to 320,000 in 2010.</li>
+       <li> A sharp decline occurred in 2011, reaching below 50,000 by 2012.</li> 
+       <li>From 2012 to 2023, treatment numbers remained consistently low, around 30,000–40,000.</li>
+      </ul>
+    </div>
+  </div>
+
+  
+  <div class="question-section">
+    <h4>14. How did the number of individuals treated in Guatemala change yearly from 2005 to 2011?</h4>
+    <div class="graph">
+      <img src="assets/images/question14.png" alt="Graph for Research Question 2" />
+    </div>
+    <div class="inference">
+       <h5>Inference :</h5>
+      <ul>
+        <li>2005–2007: High treatment numbers 160,000–170,000 annually.</li>
+       <li>2008–2009: Sharp decline to 97,000 by 2009.</li>
+       <li>2010–2011: Mild recovery to 108,000 treated.</li> 
+       <li>Post-2011: No further treatments reported—likely due to successful elimination.</li>
+      </ul>
+    </div>
+  </div>
+
+  
+  <div class="question-section">
+    <h4>15. What is the trend in the number of individuals treated in Venezuela (Bolivarian Republic of) from 2005 to 2023?</h4>
+    <div class="graph">
+      <img src="assets/images/question15.png" alt="Graph for Research Question 2" />
+    </div>
+    <div class="inference">
+       <h5>Inference :</h5>
+      <ul>
+        <li>From 2005 to 2012, about 90,000–100,000 people were treated each year.</li>
+       <li>In 2013, treatments fell sharply to around 8,000.</li>
+       <li>Between 2014 and 2019, numbers slowly rose to about 14,000.</li> 
+       <li>There was a small dip in 2020.</li>
+       <li>From 2021 to 2023, treatment stayed between 10,000 and 15,000</li>
+       <li>still much lower than before 2013.</li>
+      </ul>
+    </div>
+  </div>
+
+  
+  <div class="question-section">
+    <h4>16.How did the number of individuals treated in Mexico change from 2005 to 2011?</h4>
+    <div class="graph">
+      <img src="assets/images/question16.png" alt="Graph for Research Question 2" />
+    </div>
+    <div class="inference">
+       <h5>Inference :</h5>
+      <ul>
+        <li>2005–2008: High, stable coverage 135,000–145,000 treated annually.</li>
+       <li>2009: Sharp drop to 95,000 treatments.</li>
+       <li>2010–2011: Modest rebound to 100,000.</li> 
+       <li>2012 onward: No treatments reported, reflecting Mexico’s achievement of elimination.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="question-section">
+    <h4>17. What is the yearly trend in the number of individuals treated in Brazil from 2005 to 2023?</h4>
+    <div class="graph">
+      <img src="assets/images/question17.png" alt="Graph for Research Question 2" />
+    </div>
+    <div class="inference">
+       <h5>Inference :</h5>
+      <ul>
+        <li>2005–2009: Gradual rise from 6,800 to 8,000 treated.</li>
+       <li>2010–2016: Steady growth to 10,500 treatments.</li>
+       <li>2017–2019: Peak years, reaching 12,400 individuals treated.</li> 
+       <li>2020–2022: Slight decline during COVID-19, down to 9,800.</li>
+       <li>2023: Modest recovery to 10,400 treatments.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="question-section">
+    <h4>18. What was the trend in the number of individuals treated in Ecuador from 2005 to 2009?</h4>
+    <div class="graph">
+      <img src="assets/images/question18.png" alt="Graph for Research Question 2" />
+    </div>
+    <div class="inference">
+       <h5>Inference :</h5>
+      <ul>
+        <li>Highest treatments occurred in 2006 and 2007, above 21,000 individuals.</li>
+       <li>Slight drop in 2008 and 2009 to around 15,000.</li>
+       <li>No treatment data available after 2009, indicating possible program completion or data gap.</li> 
+      </ul>
+    </div>
+  </div>
+
+   <div class="question-section">
+    <h4>19. What is the trend in the number of individuals treated in Colombia from 2005 to 2007?</h4>
+    <div class="graph">
+      <img src="assets/images/question19.jpg" alt="Graph for Research Question 2" />
+    </div>
+    <div class="inference">
+       <h5>Inference :</h5>
+      <ul>
+        <li>Consistent treatment of around 1,150 individuals each year from 2005 to 2007.</li>
+       <li>No data available after 2007, suggesting possible program conclusion or lack of reporting.</li>
+       <li>Colombia had the lowest treatment numbers among the observed countries.</li> 
+      </ul>
+    </div>
+  </div>
+
+   <div class="question-section">
+    <h4>20. Distribution of onchocerciasis and preventive chemotherapy in endemic countries, 2023</h4>
+    <div class="graph">
+      <img src="assets/images/question20.png" alt="Graph for Research Question 2" />
+    </div>
+  </div>
+
+   <div class="question-section">
+    <h4>21. Which country had the highest number of individuals treated for Onchocerciasis in 2023?</h4>
+    <div class="graph">
+      <img src="assets/images/question21.png" alt="Graph for Research Question 2" />
+    </div>
+    <div class="inference">
+       <h5>Inference :</h5>
+      <ul>
+        <li>The Democratic Republic of the Congo leads with ~44.6M treatments, nearly half the global total.</li>
+       <li>Nigeria follows with ~34.9M, indicating significant disease burden in these countries.</li>
+       <li>The top 5 countries are all in Africa, reflecting the region’s high prevalence of onchocerciasis. </li> 
+      </ul>
+    </div>
+  </div>
+
+   <div class="question-section">
+    <h4>22. Which region had the highest Onchocerciasis treatments in 2023?</h4>
+    <div class="graph">
+      <img src="assets/images/question22.png" alt="Graph for Research Question 2" />
+    </div>
+    <div class="inference">
+       <h5>Inference :</h5>
+      <ul>
+        <li>Africa accounts for ~99.9% of global treatments, underscoring its heavy disease burden.</li>
+       <li>The Americas and Eastern Mediterranean contribute negligibly, with many countries reporting zero treatments.</li>
+       <li>This distribution highlights the need for targeted interventions in Africa</li> 
+      </ul>
+    </div>
+  </div>
+       </div> <!-- end of col -->
+       </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+    <!-- Bottom -->
+    <div class="bottom py-2 text-light" >
+        <div class="container d-flex justify-content-between">
+            <div>
+                <p>Copyright © Rashmi Khot</p>
+                 <p>School Of Computer Science and Engineering</a></p>
+            </div>
+        </div> <!-- end of container -->
+    </div> <!-- end of bottom -->
+    
+
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn">
+        <img src="assets/images/up-arrow.png" alt="alternative">
+    </button>
+    <!-- end of back to top button -->
+
+
+    <!-- Scripts -->
+    <script src="./js/bootstrap.min.js"></script><!-- Bootstrap framework -->
+    <script src="./js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
+    <script src="./js/swiper.min.js"></script><!-- Swiper for image and text sliders -->
+    <script src="./js/aos.js"></script><!-- AOS on Animation Scroll -->
+    <script src="./js/script.js"></script>  <!-- Custom scripts -->
+</body>
+</html>

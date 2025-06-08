@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Preprocessing</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="./css/aos.min.css" rel="stylesheet">
+    <link href="./css/swiper.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/favicon.png">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+        <div class="container">
+
+            <!-- Image Logo -->
+            <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> -->
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+              <img src="assets/images/kletechlogo.jpg" alt="College Logo" class="college-logo">
+            <a class="navbar-brand logo-text" href="index.html">Exploratory Data Analysis</a>
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault" >
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html#header">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SDG.html">SDG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Empathy.html">Empathy</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" href="#">Problem Formulation</a>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="ProblemDescription.html">Problem Description</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="DataDescription.html">Data Description</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" href="#">EDA</a>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="Preprocessing.html">Data Preparation and Preprocessing</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="Datanalysis.html">Data Analysis </a></li>
+                              <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="Conclusion.html">Conclusion</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SystemThinking.html">System Thinking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="LearningReflections.html">Learning Reflections</a>
+                    </li>
+                </ul>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header class="ex-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <h1>Data Preparation and Preprocessing</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <h2 class="mt-5 mb-3">Data Preparation</h2>
+                    <p class="mb-5">Data preparation and preprocessing are important steps in data analysis and machine learning. Data preparation involves collecting and cleaning data by handling missing values, removing duplicates, and ensuring consistency. Preprocessing further improves the data by scaling, normalizing, and selecting relevant features. These steps make the data clean, accurate, and ready for building better models.</p>
+                    <h3>Data Preprocessing in Our Data</h3>
+                    <ul class="list-unstyled li-space-lg mb-4">
+                        <li class="d-flex pb-2">
+                            <i class="fas fa-square"></i>
+                            <div class="flex-grow-1">Unnecessary attributes containing 100% NULL values were removed. A total of 18 attributes that contained 100% NULL values were dropped as they did not provide any useful data for analysis.</div>
+                        </li>
+                        <li class="d-flex pb-2">
+                            <i class="fas fa-square"></i>
+                            <div class="flex-grow-1">Attributes containing redundant information were identified and removed.11 such attributes were eliminated to reduce noise and improve data quality.</div>
+                        </li>
+                        <li class="d-flex pb-2">
+                            <i class="fas fa-square"></i>
+                            <div class="flex-grow-1">In the ‘Value’ attribute, entries like "Elimination Verified" or "No PC Required" were assigned a value of zero,as it reflects regions where treatment was no longer needed and no further programmatic action was required.</div>
+                        </li>
+                        <li class="d-flex pb-2">
+                            <i class="fas fa-square"></i>
+                            <div class="flex-grow-1">The ‘Value’ attribute was initially in String format and then converted to Numerical format,since it primarily contained numerical values and needed to be processed mathematically in the analysis.</div>
+                        </li>
+                         <li class="d-flex pb-2">
+                            <i class="fas fa-square"></i>
+                            <div class="flex-grow-1">The skewness of the ‘Value’ attribute was checked before handling missing values,to choose an appropriate imputation method that maintains the integrity of the data distribution.</div>
+                        </li> <li class="d-flex pb-2">
+                            <i class="fas fa-square"></i>
+                            <div class="flex-grow-1">Used median filling method to fill the missing values in the ‘Value’ attribute,as the median is more robust to outliers and better suited for skewed data compared to the mean.</div>
+                        </li>
+                        
+                        </li> <li class="d-flex pb-2">
+                            <i class="fas fa-square"></i>
+                            <div class="flex-grow-1">To ensure data consistency and maintain accuracy, the median imputation method was applied separately for each region,so that the specific characteristics of each region were preserved during the data cleaning process.</div>
+                        </li>
+                        
+                        </li> <li class="d-flex pb-2">
+                            <i class="fas fa-square"></i>
+                            <div class="flex-grow-1">This approach helped maintain the integrity of the dataset,ensuring that preprocessing did not distort regional patterns or introduce bias in further analysis.</div>
+                        </li>
+                           
+                        </li> <li class="d-flex pb-2">
+                            <i class="fas fa-square"></i>
+                            <div class="flex-grow-1">Before Preprocessing: 681 tuples and 34 attributes.</div>
+                        </li>
+                        </li> <li class="d-flex pb-2">
+                            <i class="fas fa-square"></i>
+                            <div class="flex-grow-1">After Preprocessing: 681 tuples and 5 attributes.</div>
+                        </li>
+                    </ul>
+                       <h2 class="mb-3">Dataset Before and After Preprocessing</h2>
+                    <div class="photo-container">
+                      <img src="assets/images/before.jpg" alt="Photo 1">
+                         <img src="assets/images/after.jpg" alt="Photo 2">
+                    </div>
+                     <hr style="border: 1px solid #ddd; margin: 40px 0;">
+
+                    <h2 class="mb-3">Learnings</h2>
+                    <p class="mb-4">In the data preparation and preprocessing stage, I focused on the essential steps to ensure the data was accurate and reliable. This involved handling missing or incorrect values, removing duplicates, and organizing the data properly</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+    <!-- Bottom -->
+    <div class="bottom py-2 text-light" >
+        <div class="container d-flex justify-content-between">
+            <div>
+                <p>Copyright © Rashmi Khot</p>
+                 <p>School Of Computer Science and Engineering</a></p>
+            </div>
+        </div> <!-- end of container -->
+    </div> <!-- end of bottom -->
+    
+
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn">
+        <img src="assets/images/up-arrow.png" alt="alternative">
+    </button>
+    <!-- end of back to top button -->
+
+
+    <!-- Scripts -->
+    <script src="./js/bootstrap.min.js"></script><!-- Bootstrap framework -->
+    <script src="./js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
+    <script src="./js/swiper.min.js"></script><!-- Swiper for image and text sliders -->
+    <script src="./js/aos.js"></script><!-- AOS on Animation Scroll -->
+    <script src="./js/script.js"></script>  <!-- Custom scripts -->
+</body>
+</html>
