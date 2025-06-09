@@ -901,3 +901,25 @@ a:hover {
     font-weight: bold;
     color: white;
 }
+
+/*teamphoto*/
+.photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.styled-photo {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border: 2px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+.styled-photo:hover {
+  transform: scale(1.02);
+}
+
